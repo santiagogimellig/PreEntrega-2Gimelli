@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'new zelek';
+    src: url('../assets/font/FontsFree-Net-NewZelek.ttf.ttf');
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.navbar-logo img {
+    width: 80px; 
+    height: auto; 
+}
+
+.navbar-logo,
+.navbar-cart {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.navbar-cart i {
+    font-size: 50px; 
+    display: flex;
+}
+
+.navbar-cart i p {
+    font-family: 'new zelek';
+    font-size: 20px;
+}
