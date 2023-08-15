@@ -5,7 +5,7 @@ export const productos = [
         category: "Hibrida",
         price: 150000,
         img: "https://santatabla.com/shop/includes/process/timthumb.php?src=shop/img/post/4724/5-1.png&w=240",
-        description: ""
+        description: "Tabla Windsor, totalmente flexible."
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const productos = [
         category: "Park",
         price: 120000,
         img: "https://santatabla.com/shop/includes/process/timthumb.php?src=shop/img/post/4708/14-1.png&w=240",
-        description: ""
+        description: "Tabla Salmon, totalmente flexible."
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export const productos = [
         category: "Wind",
         price: 140000,
         img: "https://santatabla.com/shop/includes/process/timthumb.php?src=shop/img/post/4719/3-1.png&w=240",
-        description: ""
+        description: "Tabla Terrain, totalmente flexible."
     },
     {
         id: 4,
@@ -29,6 +29,6 @@ export const productos = [
         category: "Lancha",
         price: 130000,
         img: "https://santatabla.com/shop/includes/process/timthumb.php?src=shop/img/post/4676/7-1.png&w=240",
-        description: ""
+        description: "Tabla contrast, totalmente flexible."
     }
 ]

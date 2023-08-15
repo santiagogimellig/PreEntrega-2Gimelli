@@ -5,24 +5,24 @@ import ItemList  from './ItemList';
 import { useParams } from "react-router-dom";
 
 export function ItemListContainer() {
-
     const [productos, setProductos] = useState([]);
-    const categoria = useParams().categoria;
-    console.log(categoria);
+    const [titulo, setTitulo] = useState("productos");
+    const { categoryId } = useParams();
 
     useEffect(() => {
-        pedirDatos()
-            .then((res) => {
-                if(categoria){
-                    setProductos(res.filter((prod) => prod.categoria === categoria));
-                }else{
-                    setProductos(res);
-                }
-            })
-    }, [categoria])
+        pedirDatos().then((res) => {
+            if (categoryId) {
+                setProductos(res.filter((prod) => prod.category === categoryId));
+                setTitulo(categoryId)
+            } else {
+                setProductos(res);
+                setTitulo("Productos");
+            }
+        });
+    }, [categoryId]);
     return (
         <>
-            <ItemList productos={productos} />
+            <ItemList productos={productos} titulo={titulo} />
         </>
     );
 };
