@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ItemDetail = ({ item }) => {
     return (
         <main className="py-5">
