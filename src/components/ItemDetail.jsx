@@ -3,24 +3,31 @@ import React from 'react';
 const ItemDetail = ({ item }) => {
     return (
         <main className="py-5">
-        <div className="container">
-            <div className="row justify-content-center">
-            <div className="col-md-3">
-                <div className="card">
-                <img src={item.img} className="card-img-top" alt={item.name} />
-                <div className="card-body text-center">
-                    <h5 className="card-title">{item.name}</h5>
-                    <p className="card-text categoria">Categoría: {item.category}</p>
-                    <p className="card-text">${item.price}</p>
-                    <p className="card-text">{item.description}</p>
-                </div>
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-md-8">
+                        <div className="card">
+                            <div className="card-horizontal d-flex">
+                                <div className="img-square-wrapper">
+                                    <img src={item.img} className="card-img-left" alt={item.name} />
+                                </div>
+                                <div className="card-body">
+                                    <h4 className="card-title mb-2">{item.name}</h4>
+                                    <h6 className="card-subtitle mb-3 text-muted">Categoria: {item.category}</h6>
+                                    <p className="card-text h5">Precio: ${item.price}</p>
+                                    <p className="card-text">Descripcion: {item.description}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>
         </main>
     );
 };
 
 export default ItemDetail;
+
+
+
 

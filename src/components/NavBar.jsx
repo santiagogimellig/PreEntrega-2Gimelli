@@ -6,9 +6,12 @@ export function NavBar() {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                {/* <Link to="/">  */}
-                    <img src="https://seeklogo.com/images/S/slingshot-kite-surfing-logo-6D45055CF0-seeklogo.com.png" alt="Logo" />
-                {/* </Link> */}
+                <Link to='/'>
+                    <img
+                        src='https://seeklogo.com/images/S/slingshot-kite-surfing-logo-6D45055CF0-seeklogo.com.png'
+                        alt='Logo'
+                    />
+                </Link>
             </div>
             <div className="navbar-links">
                 <Link className="menu-link" to="/"> Inicio </Link>
